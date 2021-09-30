@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/d8ab0e903f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/increasing.png" type="image/png">
+    <title>Search page</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+    <div class='marquee-wrapper'>  <div id="marquee"></div></div>
+   <!-- marquee ends-->
+
+        <div class="input-wrapper">
+            <input type="search" id="query" name="query" class="query" autocomplete="off" placeholder="enter symbol please"/>
+            <button id="search-button" class="search-button"><i class="fa fa-search"></i></button>
+          </button>
+          <button id = 'close' class="close-button"><i class="fas fa-times"></i></button>
+        </div>
+        <!-- input ends -->
+
+        <div class="spinner-grow"  hidden="true">
+          <span class="loader"></span>
+        </div>
+        <!-- spinner ends -->
+
+      <div id="search-result">
+         <div class='header'><h1>Search Results</h1>
+          <!-- <div id="result"></div> -->
+      </div>
+    </div>
+    <!-- search-result ends -->
+
+    </div>
+    <!-- container -->
+    <script src="app.js"></script>
+  </body>
+</html>
