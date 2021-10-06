@@ -27,7 +27,7 @@ closeButton.addEventListener('click', function () {
 });
 
 /* main fetch */
-const searchFetch = async function search() {
+const searchFetch = async function () {
   const searchTerm = searchInput.value;
   const url = `https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/search?query=${searchTerm}&limit=10&exchange=NASDAQ`;
   console.log(searchTerm);
@@ -116,6 +116,7 @@ const searchRes = (data) => {
       });
   }
 };
+
 /* match function */
 const searchMatch = () => {
   const searchText = searchInput.value;
@@ -125,6 +126,7 @@ const searchMatch = () => {
     adblock[i].innerHTML = adblock[i].innerText.replace(regex, `<b class="highlight">$&</b>`);
   }
 };
+
 /* refresh */
 const refresh = () => {
   const blocks = document.querySelectorAll('.adblock');
@@ -132,6 +134,7 @@ const refresh = () => {
     item.remove();
   }
 };
+
 /* marquee */
 async function marqueeWork() {
   const urlMarquee = `https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/quotes/nasdaq`;
@@ -175,6 +178,7 @@ const fetchDebounse = () => {
       searchMatch();
     });
 };
+
 searchInput.addEventListener('keyup', debounce(fetchDebounse, 300));
 
 /* for changing url
@@ -183,17 +187,3 @@ const changeurl = () => {
 }
 
 */
-/* for enter
-
-searchInput.addEventListener('keydown', (event) => {
-  console.log(event);
-  if (event.key === 'Enter') {
-    searchInput.classList.add('focus');
-    searchButton.classList.add('clicked');
-    closeButton.classList.add('clicked-close');
-    fas.classList.add('focus');
-    spinner.hidden = false;
-    searchFetch();
-}
-});
- */

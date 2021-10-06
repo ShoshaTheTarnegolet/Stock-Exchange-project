@@ -2,6 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const symbol = urlParams.get('symbol');
 const spinner = document.querySelector('.spinner-grow');
 spinner.hidden = false;
+
 /* main fetch */
 const link = `https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/company/profile/${symbol}`;
 fetch(link)
@@ -131,7 +132,7 @@ fetch(priceLink)
           plugins: {
             title: {
               display: true,
-              text: `History of stock price of the ${name}`,
+              text: `History of stock price of ${name}`,
             },
           },
 
