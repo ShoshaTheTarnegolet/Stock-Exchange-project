@@ -13,4 +13,4 @@ Here you can find:
 
 It isn't finished yet since I have some bonus things to do.
 
-You can try it [here] (https://gifted-sinoussi-88b2f9.netlify.app/)
+You can try it [here] (https://stock-exchange-project.netlify.app//)
