@@ -11,6 +11,6 @@ Here you can find:
 4. multiple promises;
 5. marquee, loader
 
-It isn't finished yet since I have some bonus things to do.
+It isn't finished yet: I want to add a compare button and make a compare page.
 
 You can try it [here](https://stock-exchange-project.pages.dev//)
