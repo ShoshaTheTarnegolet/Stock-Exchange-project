@@ -37,6 +37,7 @@ body {
   padding: 3%;
   border-bottom: 1px solid rgb(230, 225, 225);
   animation: bounceInRight 2s both;
+  -webkit-animation: bounceInRight 2s both;
 }
 
 .companyHeader {

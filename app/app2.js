@@ -7,6 +7,7 @@ spinner.hidden = false;
 const link = `https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/company/profile/${symbol}`;
 fetch(link)
   .then((res) => {
+    console.log(res);
     if (res.status != 200) {
       alert('Fetch is not happening');
       return;
@@ -17,6 +18,7 @@ fetch(link)
     setTimeout(function () {
       spinner.hidden = true;
       companyBlock(data);
+      console.dir(data);
       fetch(priceLink);
     }, 2000);
   });
@@ -24,7 +26,6 @@ fetch(link)
 /*create company block */
 const companyBlock = (data) => {
   const profile = data.profile;
-
   /*  header */
   const cHeader = document.createElement('h1');
   cHeader.className = 'companyHeader';

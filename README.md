@@ -13,4 +13,4 @@ Here you can find:
 
 It isn't finished yet: I want to add a compare button and make a compare page.
 
-You can try it [here](https://stock-exchange-project.pages.dev//)
+You can try it [on Netlify](https://stock-exchange-project.netlify.app/)
